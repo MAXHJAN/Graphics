@@ -103,11 +103,6 @@ void MySolidTetrahedron(double a = 1) {
 	if (list == 0)
 	{
 
-		/*GLfloat
-			PointA[] = { -0.5, -5 * sqrt(5) / 48, sqrt(3) / 6 },
-			PointB[] = { 0.5, -5 * sqrt(5) / 48, sqrt(3) / 6 },
-			PointC[] = { 0, -5 * sqrt(5) / 48, -sqrt(3) / 3 },
-			PointD[] = { 0, 11 * sqrt(6) / 48, 0 };*/
 		GLfloat
 			PointA[] = { 0.5f, -sqrt(6.0f) / 12, -sqrt(3.0f) / 6 },
 			PointB[] = { -0.5f, -sqrt(6.0f) / 12, -sqrt(3.0f) / 6 },

@@ -153,11 +153,7 @@ void Ortho2D(int xl, int xr, int yl, int yr) {
 	gluOrtho2D(xl - 0.15, xl + temp + 0.15, yl - 0.15, yl + temp + 0.15);
 }
 void Paint() {
-	int s[2][2] =
-		//{ { 20,10 },{ 28,16 } };//0<m<1
-	//{ { 20,10 },{ 28,20 } };//m>1
-	//{ { 20,10 },{ 28,2 } };//-1<m<0
-	{ { 20,10 },{ 28,0 } };//m<-1
+	int s[2][2] ={ { 20,10 },{ 28,16 } };//m<-1
 	GLsizei w = glutGet(GLUT_WINDOW_WIDTH);
 	GLsizei h = glutGet(GLUT_WINDOW_HEIGHT);
 	glViewport((w - 400) / 2, (h - 400) / 2, 400, 400);
@@ -167,19 +163,6 @@ void Paint() {
 	points(s[0][0], s[0][1], s[1][0], s[1][1]);
 	lins(s[0][0], s[0][1], s[1][0], s[1][1]);
 	axes(s[0][0], s[0][1], s[1][0], s[1][1]);
-
-	/*Ortho2D(0, 31, 0, 31);
-	points(0,19,31,19);
-	lins(0, 19, 31, 19);
-	points(0,19,25,1);
-	lins(0, 19, 25, 1);
-	points(5,1,15,31);
-	lins(5, 1, 15, 31);
-	points(5,1,31,19);
-	lins(5, 1, 31, 19);
-	points(15,31,25,1);
-	lins(15, 31, 25, 1);
-	axes(0, 0, 31, 31);*/
 
 	glFlush();
 }

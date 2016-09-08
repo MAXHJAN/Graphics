@@ -137,7 +137,7 @@ void Paint() {
 	glFlush();
 }
 int main() {
-	glutInitWindowSize(400, 400);
+	glutInitWindowSize(500, 500);
 	glutCreateWindow("Cohen-SutherlandÀ„∑®");
 	glutDisplayFunc(Paint);
 	glutMainLoop();
